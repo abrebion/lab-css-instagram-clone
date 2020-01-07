@@ -4,7 +4,87 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+}
+
+.background-wrapper {
+  background: url("../images/bgtile.png") repeat-x top;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+.right-side {
+  width: 504px;
+  height: 518px;
+  margin-left: 60px;
+}
+
+.right-side nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side #logo {
+  width: 250px;
+}
+
+.right-side article {
+  background: url('../images/frame.png') no-repeat;
+  padding: 45px 45px 0 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side article img:first-of-type {
+  margin-right: 10px;
+}
+
+.right-side h1 {
+  color: #1c5380;
+  line-height: 1.2;
+  width: 60%;
+}
+
+.right-side p {
+  margin: 20px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-top: 60px;
+  /* position: fixed;
+  bottom: 0; */
+}
+
+.footer li {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.footer li:last-child {
+  color: grey;
+}
+
+.footer a {
+  color: #1c5380;
+  text-decoration: none;
 }
