@@ -43,7 +43,7 @@ body {
 }
 
 .right-side article {
-  background: url('../images/frame.png') no-repeat;
+  background: url("../images/frame.png") no-repeat;
   padding: 45px 45px 0 45px;
   display: flex;
   flex-direction: column;
@@ -69,8 +69,8 @@ body {
   align-items: center;
   list-style: none;
   margin-top: 60px;
-  /* position: fixed;
-  bottom: 0; */
+  position: fixed;
+  bottom: 0;
 }
 
 .footer li {
